@@ -17,7 +17,7 @@ const reducer = (state = '', action) => {
             "Visibility": action.data.visibility,
         }
     } else if (action.type === "error") {
-        return {"We can't give you the weather ": action.data.message}
+        return {"We can't give you the weather": action.data.message}
     } else {
         return state;
     }
