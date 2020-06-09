@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header";
-import Form from "./components/Form";
-import Weather from "./components/Weather";
+import Header from "./components/Header/Header";
+import Form from "./components/Form/Form";
+import Weather from "./components/Weather/Weather";
 
 
 class App extends React.Component {
     render() {
         return (
             <div className='App'>
-              <Header/>
+                <Header/>
                 <div className='App-content'>
-              <Form/>
-              <Weather/>
+                    <Form/>
+                    <Weather/>
                 </div>
             </div>
         );

@@ -1,0 +1,22 @@
+.App-text-field {
+    position: relative;
+    top: 25px;
+}
+
+.App-button {
+    position: relative;
+    top: 35px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+#city {
+    font-size: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#getWeatherButton {
+    font-size: 35px;
+    margin-left: 15px;
+}

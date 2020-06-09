@@ -1,9 +1,10 @@
 import React from 'react';
-import './../App.css';
+import '../../App.css';
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import classes from "@material-ui/core/ListItem/ListItem";
 import {connect} from "react-redux";
+import './form.css'
 
 class Form extends React.Component {
 
