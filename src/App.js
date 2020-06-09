@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from "./component/Header";
-import Form from "./component/Form";
-import Weather from "./component/Weather";
+import Header from "./components/Header";
+import Form from "./components/Form";
+import Weather from "./components/Weather";
 
 
 class App extends React.Component {

@@ -4,7 +4,6 @@ import {connect} from "react-redux";
 class Weather extends React.Component {
 
     render() {
-
         return (
             <div className="App-weather">
                 {Object.keys(this.props.store).map((point) =>
