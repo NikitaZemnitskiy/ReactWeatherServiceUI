@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../App.css';
+import '../../redux/action/action-creator';
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import classes from "@material-ui/core/ListItem/ListItem";
 import {connect} from "react-redux";
 import './form.css'
+import {WEATHER_CHANGE, WEATHER_ERROR} from "../../redux/action/action-creator";
 
 class Form extends React.Component {
 
@@ -43,9 +45,9 @@ export default connect(
                 "http://localhost:8181/cxf/weather/city/" + city);
             const data = await apiCall.json();
             if (data.cod !== "404") {
-                dispatch({type: "weatherChange", data: data})
+                dispatch(WEATHER_CHANGE(data))
             } else {
-                dispatch({type: "error", data: data})
+                dispatch(WEATHER_ERROR(data))
             }
         }
     })

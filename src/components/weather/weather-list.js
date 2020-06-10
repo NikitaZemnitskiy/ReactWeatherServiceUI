@@ -1,14 +1,14 @@
 import React from "react";
 import {connect} from "react-redux";
-import "./weather.css"
+import "./weather-list.css"
 
-class Weather extends React.Component {
+class WeatherList extends React.Component {
 
     render() {
         return (
             <div className="App-weather">
                 {Object.keys(this.props.store).map((point) =>
-                    <div>
+                    <div key={point}>
                         {point} : {this.props.store[point]}
                     </div>
                 )}
@@ -21,4 +21,4 @@ export default connect(
     state => ({
         store: state
     }),
-)(Weather);
+)(WeatherList);
